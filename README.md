@@ -11,29 +11,40 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Dart package to show numbers in the form like 10,000 = 10K+, 10,00,000 = 1M+ etc
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Converting numbers below 1000
+  - Examples
+    - Input int 10 => 10
+    - Input int 12 => 10+
+    - Input int 504 => 500+
+- Converting thousand digits like
+  - 10,000 => 10K
+  - 10,500 => 10K+
+- Converting Millions/Lakh digits like
+  - 100,000 => 100K+
+  - 10,00,000 => 1M
+  - 10,00,500 => 1M+
+- Converting Billions digits like
+  - 100,000,0000 => 1B
+  - 100,000,5000 => 1B+
+
 
 ## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
+Add dependency in the pubspec.yaml and import this line to start using this package
+```dart
+import 'package:pp/src/pp_base.dart';
+```
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+import 'package:pp/src/pp_base.dart';
+
+void main() {
+  int numbers = 11543;
+  String s = n.roundOfNumbers();
+  print(s); /// output s = 11K+ 
+}
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
