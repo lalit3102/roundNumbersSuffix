@@ -1,6 +1,7 @@
-import 'package:pp/pp.dart';
+import 'package:pp/src/pp_base.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  int numbers = 11543;
+  String s = numbers.roundOfNumbers();
+  print(s); /// output s = 11K+
 }
