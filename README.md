@@ -16,10 +16,9 @@ A Dart package to show numbers in the form like 10,000 = 10K+, 10,00,000 = 1M+ e
 ## Features
 
 - Converting numbers below 1000
-  - Examples
-    - Input int 10 => 10
-    - Input int 12 => 10+
-    - Input int 504 => 500+
+  - Input int 10 => 10
+  - Input int 12 => 10+
+  - Input int 504 => 500+
 - Converting thousand digits like
   - 10,000 => 10K
   - 10,500 => 10K+
