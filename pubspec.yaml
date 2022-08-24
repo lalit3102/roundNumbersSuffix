@@ -1,5 +1,5 @@
 name: pp
-description: A starting point for Dart libraries or applications.
+description: A package to convert numbers into strings to easily readable.
 version: 1.0.0
 homepage: https://github.com/lalit3102/roundNumbersSuffix.git
 
